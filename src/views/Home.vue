@@ -62,15 +62,16 @@
   overflow: visible;
   height: auto;
   background-color: #969696;
-  padding: 80px 80px 20px 80px;
 
   &.bottom {
     bottom: 0%;
     border-radius: 20px 20px 0 0;
+    padding: 40px 80px 20px 80px;
   }
   &.top {
     top: 0%;
     border-radius: 0 0 20px 20px;
+    padding: 20px 80px 40px 80px;
   }
 }
 
