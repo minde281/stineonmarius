@@ -1,6 +1,6 @@
 <template>
   <div class="full-width background-image top-image">
-    <div class="image-text">
+    <div class="image-text bottom">
       <h1>Vi gifter oss 22. juni 2024</h1>
       <h2>Bli med å feire dagen med oss</h2>
     </div>
@@ -16,7 +16,12 @@
       <h2>Scandic Nidelven</h2>
     </div>
   </div>
-  <div class="full-width background-image"></div>
+  <div class="full-width background-image image-stare">
+    <div class="image-text top">
+      <h1>Lorem, ipsum dolor sit amet</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    </div>
+  </div>
 </template>
 
 <script setup></script>
@@ -48,7 +53,6 @@
 .image-text {
   position: absolute;
   width: 75vh;
-  bottom: 0%;
   left: 50%;
   transform: translate(-50%, 0);
   color: #000000;
@@ -59,7 +63,15 @@
   height: auto;
   background-color: #969696;
   padding: 80px 80px 20px 80px;
-  border-radius: 20px 20px 0 0;
+
+  &.bottom {
+    bottom: 0%;
+    border-radius: 20px 20px 0 0;
+  }
+  &.top {
+    top: 0%;
+    border-radius: 0 0 20px 20px;
+  }
 }
 
 .center-text {
@@ -80,5 +92,9 @@
 
 .top-image {
   background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-006.jpg");
+}
+
+.image-stare {
+  background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-001-bw.jpg");
 }
 </style>
