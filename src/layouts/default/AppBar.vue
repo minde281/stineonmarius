@@ -50,6 +50,26 @@ header.v-app-bar {
   src: url("/public/fonts/Mrs Alexandra.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Wedding Bells";
+  src: url("/public/fonts/Wedding Bells - TTF.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("/public/fonts/Dosis-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GreatVibes";
+  src: url("/public/fonts/GreatVibes-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Alexis Marie";
+  src: url("/public/fonts/Alexis Marie.ttf") format("truetype");
+}
+
 .v-toolbar__content {
   .v-toolbar-title__placeholder {
     font-family: "Andasia", sans-serif;

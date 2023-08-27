@@ -1,13 +1,14 @@
 <template>
   <div class="full-width background-image top-image">
     <div class="image-text bottom">
-      <h1>Vi gifter oss 22. juni 2024</h1>
-      <h2>Bli med og feire dagen med oss</h2>
+      <p class="date">22. juni 2024</p>
+      <p class="sub-text">Bli med og feire dagen med oss</p>
     </div>
   </div>
   <div class="full-width the-day">
     <div class="center-text">
       <div class="time-table">
+        <p class="header">Program</p>
         <v-row>
           <v-col class="text-rigth" cols="12" sm="6">
             <p class="display-1">12:00</p>
@@ -96,6 +97,7 @@ export default {
 @background-color: #ffffff;
 @text-box-background-color: #b2ac88;
 @text-box-text-color: #000000;
+@default-font: "Alexis Marie", sans-serif;
 
 .container {
   display: flex;
@@ -126,7 +128,7 @@ export default {
   left: 50%;
   transform: translate(-50%, 0);
   color: @text-box-text-color;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: @default-font;
   font-weight: 100;
   text-align: center;
   overflow: visible;
@@ -137,6 +139,12 @@ export default {
     bottom: 0%;
     border-radius: 20px 20px 0 0;
     padding: 40px 80px 20px 80px;
+    p {
+      font-size: 30px;
+      &.date {
+        font-size: 50px;
+      }
+    }
   }
   &.top {
     top: 0%;
@@ -153,7 +161,7 @@ export default {
   left: 50%;
   transform: translate(-50%, 0);
   color: @text-box-text-color;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: @default-font;
   font-weight: 100;
   text-align: center;
   overflow: visible;
@@ -190,7 +198,14 @@ export default {
 }
 
 .time-table {
-  font-size: 25px;
+  font-size: 40px;
+  .header {
+    font-size: 60px;
+    font-family: "Andasia", sans-serif;
+    text-align: center;
+    overflow: visible;
+    height: auto;
+  }
 }
 
 .text-rigth {
