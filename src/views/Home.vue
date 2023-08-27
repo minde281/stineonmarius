@@ -42,13 +42,6 @@
           </v-col>
         </v-row>
       </div>
-      <br />
-      <br />
-      <h1>Program</h1>
-      <h3>Sermoni</h3>
-      <h2>Rotvol park</h2>
-      <h3>Selskap</h3>
-      <h2>Scandic Nidelven</h2>
     </div>
   </div>
   <div class="full-width background-image image-stare">
@@ -198,6 +191,7 @@ export default {
 }
 
 .time-table {
+  padding-top: 60px;
   font-size: 40px;
   .header {
     font-size: 60px;
