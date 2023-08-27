@@ -18,26 +18,26 @@
         </v-row>
         <v-row>
           <v-col class="text-rigth" cols="12" sm="6">
-            <p class="display-1">12:00</p>
+            <p class="display-1">14:00</p>
           </v-col>
           <v-col class="text-left" cols="12" sm="6">
-            <p class="display-1">Puling i fjæra</p>
+            <p class="display-1">Analen i kanalen</p>
           </v-col>
         </v-row>
         <v-row>
           <v-col class="text-rigth" cols="12" sm="6">
-            <p class="display-1">12:00</p>
+            <p class="display-1">16:00</p>
           </v-col>
           <v-col class="text-left" cols="12" sm="6">
-            <p class="display-1">Puling i fjæra</p>
+            <p class="display-1">Snusken i busken</p>
           </v-col>
         </v-row>
         <v-row>
           <v-col class="text-rigth" cols="12" sm="6">
-            <p class="display-1">12:00</p>
+            <p class="display-1">18:00</p>
           </v-col>
           <v-col class="text-left" cols="12" sm="6">
-            <p class="display-1">Puling i fjæra</p>
+            <p class="display-1">BK</p>
           </v-col>
         </v-row>
       </div>
