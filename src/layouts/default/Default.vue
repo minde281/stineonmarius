@@ -19,6 +19,6 @@ import DefaultView from "./View.vue";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #424242;
+  background-color: #ffffff;
 }
 </style>

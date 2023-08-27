@@ -2,11 +2,45 @@
   <div class="full-width background-image top-image">
     <div class="image-text bottom">
       <h1>Vi gifter oss 22. juni 2024</h1>
-      <h2>Bli med å feire dagen med oss</h2>
+      <h2>Bli med og feire dagen med oss</h2>
     </div>
   </div>
   <div class="full-width the-day">
     <div class="center-text">
+      <div class="time-table">
+        <v-row>
+          <v-col class="text-rigth" cols="12" sm="6">
+            <p class="display-1">12:00</p>
+          </v-col>
+          <v-col class="text-left" cols="12" sm="6">
+            <p class="display-1">Puling i fjæra</p>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="text-rigth" cols="12" sm="6">
+            <p class="display-1">12:00</p>
+          </v-col>
+          <v-col class="text-left" cols="12" sm="6">
+            <p class="display-1">Puling i fjæra</p>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="text-rigth" cols="12" sm="6">
+            <p class="display-1">12:00</p>
+          </v-col>
+          <v-col class="text-left" cols="12" sm="6">
+            <p class="display-1">Puling i fjæra</p>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col class="text-rigth" cols="12" sm="6">
+            <p class="display-1">12:00</p>
+          </v-col>
+          <v-col class="text-left" cols="12" sm="6">
+            <p class="display-1">Puling i fjæra</p>
+          </v-col>
+        </v-row>
+      </div>
       <br />
       <br />
       <h1>Program</h1>
@@ -18,25 +52,61 @@
   </div>
   <div class="full-width background-image image-stare">
     <div class="image-text top">
-      <h1>Lorem, ipsum dolor sit amet</h1>
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <div class="timer">
+        <vue-countdown :time="timer" v-slot="{ days, hours, minutes, seconds }">
+          <div class="flex">
+            <div title="Dager" class="days">
+              <p>Dager</p>
+              {{ days }}
+            </div>
+            <div title="Timer" class="hours">
+              <p>Timer</p>
+              {{ hours }}
+            </div>
+            <div title="Minutter" class="minutes">
+              <p>Minutter</p>
+              {{ minutes }}
+            </div>
+            <div title="Sekunder" class="seconds">
+              <p>Sekunder</p>
+              {{ seconds }}
+            </div>
+          </div>
+        </vue-countdown>
+      </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script>
+export default {
+  data: () => ({}),
+  computed: {
+    timer() {
+      const now = new Date();
+      const newYear = Date.parse("2024-06-22 14:00:00");
+
+      return newYear - now;
+    },
+  },
+};
+</script>
 
 <style lang="less" scoped>
+@background-color: #ffffff;
+@text-box-background-color: #b2ac88;
+@text-box-text-color: #000000;
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #b2ac88;
+  background-color: @background-color;
 }
 
 .background-image {
-  background-color: #b2ac88;
+  background-color: @background-color;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,7 +117,7 @@
   width: 100vw;
   max-width: 1920px;
   position: relative;
-  background-color: #b2ac88;
+  background-color: @text-box-background-color;
 }
 
 .image-text {
@@ -55,13 +125,13 @@
   width: 75vh;
   left: 50%;
   transform: translate(-50%, 0);
-  color: #000000;
+  color: @text-box-text-color;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   text-align: center;
   overflow: visible;
   height: auto;
-  background-color: #969696;
+  background-color: @text-box-background-color;
 
   &.bottom {
     bottom: 0%;
@@ -82,13 +152,13 @@
   bottom: 0%;
   left: 50%;
   transform: translate(-50%, 0);
-  color: #000000;
+  color: @text-box-text-color;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   text-align: center;
   overflow: visible;
   height: auto;
-  background-color: #969696;
+  background-color: @text-box-background-color;
 }
 
 .top-image {
@@ -97,5 +167,44 @@
 
 .image-stare {
   background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-001-bw.jpg");
+}
+
+.timer {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+  font-family: "LoversQuarrel", sans-serif;
+  overflow: visible;
+  height: auto;
+  div {
+    font-size: 50px;
+    padding: 0 30px;
+    p {
+      font-size: 40px;
+      font-family: "Andasia", sans-serif;
+      text-align: center;
+      overflow: visible;
+      height: auto;
+    }
+  }
+}
+
+.time-table {
+  font-size: 25px;
+}
+
+.text-rigth {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 </style>

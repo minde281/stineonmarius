@@ -4,18 +4,16 @@
   </v-app-bar>
 </template>
 
-<script setup>
-//
-</script>
+<script></script>
 
 <style scoped>
 header.v-app-bar {
-  background-color: #b2ac88;
+  background-color: #ffffff;
   color: #000000;
 }
 </style>
 
-<style>
+<style lang="less">
 @font-face {
   font-family: "I Love Glitter";
   src: url("/public/fonts/I Love Glitter.ttf") format("truetype");
@@ -42,12 +40,24 @@ header.v-app-bar {
   src: url("/public/fonts/Andasia.ttf") format("truetype");
 }
 
-.v-toolbar__content .v-toolbar-title__placeholder {
-  font-family: "Andasia", sans-serif;
-  font-size: 5rem;
-  font-weight: 100;
-  text-align: center;
-  overflow: visible;
-  height: auto;
+@font-face {
+  font-family: "LoversQuarrel";
+  src: url("/public/fonts/LoversQuarrel-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mrs Alexandra";
+  src: url("/public/fonts/Mrs Alexandra.ttf") format("truetype");
+}
+
+.v-toolbar__content {
+  .v-toolbar-title__placeholder {
+    font-family: "Andasia", sans-serif;
+    font-size: 5rem;
+    font-weight: 100;
+    text-align: center;
+    overflow: visible;
+    height: auto;
+  }
 }
 </style>
