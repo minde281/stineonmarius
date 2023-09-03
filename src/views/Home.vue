@@ -32,12 +32,12 @@
           <p>Ønskes noe utover dette kan det kjøpes i baren.</p>
         </div>
         <div class="section overnatting">
-          <p class="header">Overnatting</p>
+          <p class="header">Overnatting TODO</p>
           <p>
             Ønsker dere å overnatte på hotellet kan dere bruke rabattkode
-            "RABATTKODE" ved bestilling. Da er Norges beste hotellfrokost
-            inkludert.
+            "RABATTKODE" ved bestilling.
           </p>
+          <p>Da er Norges beste hotellfrokost inkludert.</p>
         </div>
         <div class="section kleskode">
           <p class="header">Kleskode</p>
@@ -47,7 +47,7 @@
           </p>
         </div>
         <div class="section toastmaster">
-          <p class="header">Toastmaster</p>
+          <p class="header">Toastmaster TODO</p>
           <p>Vi har gleden av å presentere vår toastmaster</p>
           <p>Stine Minde</p>
           <br />
@@ -59,14 +59,12 @@
         </div>
         <div class="section onskeliste">
           <p class="header">Gaver</p>
-          <p>
-            Vi er heldige og har alt vi trenger av materielle ting. Det vi
-            skulle hatt mer av er tid sammen. Vi ønsker oss derfor et bidrag til
-            bryllupsreise.
-          </p>
+          <p>Vi er heldige og har alt vi trenger av materielle ting.</p>
+          <p>Det vi skulle hatt mer av er tid sammen.</p>
+          <p>Vi ønsker oss derfor et bidrag til bryllupsreise.</p>
         </div>
         <div class="section music">
-          <p class="header">Musikk</p>
+          <p class="header">Musikk TODO</p>
           <p>
             Hjelp oss gjerne med å lage spilleliste for kvelden. Har du en sang
             du vil høre kan du legge den til på spotifylista vår.
@@ -75,6 +73,26 @@
         <div class="section rsvp">
           <p class="header">Rsvp</p>
           <p>Gi gjerne beskjed om dere kommer eller ikke innen 15. april.</p>
+        </div>
+        <div class="section forlovere">
+          <p class="header">Forlovere TODO</p>
+          <div class="flex">
+            <div class="forlover">
+              <p>Stine</p>
+              <p>Minde</p>
+            </div>
+            <div class="forlover">
+              <p>Marius</p>
+              <p>Minde</p>
+            </div>
+          </div>
+        </div>
+        <div class="section foto">
+          <p class="header">Bilder</p>
+          <p>
+            Vi ønsker å samle alle bilder fra dagen. Har du tatt noen bilder kan
+            du laste de opp her. TODO: Link til bildeopplasting
+          </p>
         </div>
       </div>
     </div>
