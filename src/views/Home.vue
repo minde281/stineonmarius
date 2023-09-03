@@ -5,6 +5,81 @@
       <p class="sub-text">Bli med og feire dagen med oss</p>
     </div>
   </div>
+  <div class="full-width dynamic-height addresses">
+    <div class="content">
+      <div class="center-text">
+        <div class="section sermoni">
+          <p class="header">Sermoni</p>
+          <p>Rotvoll Park</p>
+          <p>Arkitekt Ebbells veg 22</p>
+          <p>7053 Ranheim</p>
+          <p>Bygg D, kl 14.00</p>
+          <p></p>
+          <br />
+          <p>Etter sermonien blir det servert bobler og kake.</p>
+          <p>De som ønsker kan være på Rotvoll Park frem til kl 16.00</p>
+        </div>
+        <div class="section">
+          <p class="header">Selskap</p>
+          <p>Scandic Nidelven</p>
+          <p>Havnegata 1-3</p>
+          <p>7010 Trondheim</p>
+          <p>Kl 17.00</p>
+          <p></p>
+          <br />
+          <p>Det servetes aperitiff,</p>
+          <p>3-retters middag med drikke og kaffe.</p>
+          <p>Ønskes noe utover dette kan det kjøpes i baren.</p>
+        </div>
+        <div class="section overnatting">
+          <p class="header">Overnatting</p>
+          <p>
+            Ønsker dere å overnatte på hotellet kan dere bruke rabattkode
+            "RABATTKODE" ved bestilling. Da er Norges beste hotellfrokost
+            inkludert.
+          </p>
+        </div>
+        <div class="section kleskode">
+          <p class="header">Kleskode</p>
+          <p>
+            Kleskoden er dress. Kle deg i noe du føler deg fin i og som du kan
+            danse i.
+          </p>
+        </div>
+        <div class="section toastmaster">
+          <p class="header">Toastmaster</p>
+          <p>Vi har gleden av å presentere vår toastmaster</p>
+          <p>Stine Minde</p>
+          <br />
+          <p>
+            Dersom du har noe du ønsker å fortelle felleskapet ber vi deg varsle
+            vår toastmaster på 81549300.
+          </p>
+          <p>Vi vil likevel be dere holde taler korte og underholdende</p>
+        </div>
+        <div class="section onskeliste">
+          <p class="header">Gaver</p>
+          <p>
+            Vi er heldige og har alt vi trenger av materielle ting. Det vi
+            skulle hatt mer av er tid sammen. Vi ønsker oss derfor et bidrag til
+            bryllupsreise.
+          </p>
+        </div>
+        <div class="section music">
+          <p class="header">Musikk</p>
+          <p>
+            Hjelp oss gjerne med å lage spilleliste for kvelden. Har du en sang
+            du vil høre kan du legge den til på spotifylista vår.
+          </p>
+        </div>
+        <div class="section rsvp">
+          <p class="header">Rsvp</p>
+          <p>Gi gjerne beskjed om dere kommer eller ikke innen 15. april.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="full-width background-image image-stare"></div>
   <div class="full-width the-day">
     <div class="center-text">
       <div class="time-table">
@@ -113,6 +188,9 @@ export default {
   max-width: 1920px;
   position: relative;
   background-color: @text-box-background-color;
+  &.dynamic-height {
+    height: auto;
+  }
 }
 
 .image-text {
@@ -147,12 +225,9 @@ export default {
 }
 
 .center-text {
-  position: absolute;
-  width: 75vh;
   top: 0%;
   bottom: 0%;
   left: 50%;
-  transform: translate(-50%, 0);
   color: @text-box-text-color;
   font-family: @default-font;
   font-weight: 100;
@@ -187,6 +262,18 @@ export default {
       overflow: visible;
       height: auto;
     }
+  }
+}
+
+.center-text {
+  font-size: 25px;
+  p.header {
+    padding-top: 40px;
+    font-size: 60px;
+    font-family: "Andasia", sans-serif;
+    text-align: center;
+    overflow: visible;
+    height: auto;
   }
 }
 
