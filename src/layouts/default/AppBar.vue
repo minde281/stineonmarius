@@ -8,7 +8,7 @@
 
 <style scoped>
 header.v-app-bar {
-  background-color: #ffffff;
+  background-color: #b2ac88;
   color: #000000;
 }
 </style>
