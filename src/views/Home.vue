@@ -73,6 +73,8 @@
         <div class="section rsvp">
           <p class="header">Rsvp</p>
           <p>Gi gjerne beskjed om dere kommer eller ikke innen 15. april.</p>
+          <p>Tlf Stine: 47898727</p>
+          <p>Tlf Marius: 98401479</p>
         </div>
         <div class="section forlovere">
           <p class="header">Forlovere TODO</p>
@@ -91,7 +93,8 @@
           <p class="header">Bilder</p>
           <p>
             Vi ønsker å samle alle bilder fra dagen. Har du tatt noen bilder kan
-            du laste de opp her. TODO: Link til bildeopplasting
+            du laste de opp
+            <a href="https://photos.app.goo.gl/kpox96iZmP6dMSwB7">her</a>.
           </p>
         </div>
       </div>
@@ -167,7 +170,18 @@
 
 <script>
 export default {
-  data: () => ({}),
+  data: () => ({
+    songRequest: {
+      name: "",
+      textarea: "",
+    },
+    rsvp: {
+      name: "",
+      plussOne: false,
+      namePartner: "",
+      attending: true,
+    },
+  }),
   computed: {
     timer() {
       const now = new Date();
@@ -176,6 +190,7 @@ export default {
       return newYear - now;
     },
   },
+  methods: {},
 };
 </script>
 
@@ -253,6 +268,10 @@ export default {
   overflow: visible;
   height: auto;
   background-color: @text-box-background-color;
+  .rsvp-form {
+    width: 400px;
+    display: inline-block;
+  }
 }
 
 .top-image {
