@@ -175,7 +175,7 @@
       </div>
     </div>
   </div>
-  <div class="spotify">
+  <!-- <div class="spotify">
     <iframe
       style="border-radius: 12px"
       src="https://open.spotify.com/embed/playlist/2gmiGRcHdP1dnw4x6q5pvE?utm_source=generator"
@@ -186,7 +186,7 @@
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy"
     ></iframe>
-  </div>
+  </div> -->
 </template>
 
 <script>
