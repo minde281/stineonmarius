@@ -64,10 +64,15 @@
           <p>Vi ønsker oss derfor et bidrag til bryllupsreise.</p>
         </div>
         <div class="section music">
-          <p class="header">Musikk TODO</p>
+          <p class="header">Musikk</p>
           <p>
             Hjelp oss gjerne med å lage spilleliste for kvelden. Har du en sang
-            du vil høre kan du legge den til på spotifylista vår.
+            du vil høre kan du legge den til på
+            <a
+              target="_blank"
+              href="https://open.spotify.com/playlist/2gmiGRcHdP1dnw4x6q5pvE?si=9a1503f03c6c4f96"
+              >spotifylista vår</a
+            >.
           </p>
         </div>
         <div class="section rsvp">
@@ -94,7 +99,11 @@
           <p>
             Vi ønsker å samle alle bilder fra dagen. Har du tatt noen bilder kan
             du laste de opp
-            <a href="https://photos.app.goo.gl/kpox96iZmP6dMSwB7">her</a>.
+            <a
+              target="_blank"
+              href="https://photos.app.goo.gl/kpox96iZmP6dMSwB7"
+              >her</a
+            >.
           </p>
         </div>
       </div>
@@ -165,6 +174,18 @@
         </vue-countdown>
       </div>
     </div>
+  </div>
+  <div class="spotify">
+    <iframe
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/playlist/2gmiGRcHdP1dnw4x6q5pvE?utm_source=generator"
+      width="100%"
+      height="152"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
   </div>
 </template>
 
@@ -280,6 +301,13 @@ export default {
 
 .image-stare {
   background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-001-bw.jpg");
+}
+
+.spotify {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .timer {
