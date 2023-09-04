@@ -60,58 +60,58 @@ header.v-app-bar {
 <style lang="less">
 @font-face {
   font-family: "I Love Glitter";
-  src: url("/public/fonts/I Love Glitter.ttf") format("truetype");
+  src: url("/fonts/I Love Glitter.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Monsieur-Regular";
-  src: url("/public/fonts/MonsieurLaDoulaise-Regular.ttf") format("truetype");
+  src: url("/fonts/MonsieurLaDoulaise-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "The heart of everything";
-  src: url("/public/fonts/The Heart of Everything - TTF.ttf") format("truetype"),
-    url("/public/fonts/The Heart of Everything - OTF.otf") format("otf");
+  src: url("/fonts/The Heart of Everything - TTF.ttf") format("truetype"),
+    url("/fonts/The Heart of Everything - OTF.otf") format("otf");
 }
 
 @font-face {
   font-family: "Brotherhood";
-  src: url("/public/fonts/Brotherhood_Script.ttf") format("truetype");
+  src: url("/fonts/Brotherhood_Script.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Andasia";
-  src: url("/public/fonts/Andasia.ttf") format("truetype");
+  src: url("/fonts/Andasia.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "LoversQuarrel";
-  src: url("/public/fonts/LoversQuarrel-Regular.ttf") format("truetype");
+  src: url("/fonts/LoversQuarrel-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Mrs Alexandra";
-  src: url("/public/fonts/Mrs Alexandra.ttf") format("truetype");
+  src: url("/fonts/Mrs Alexandra.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Wedding Bells";
-  src: url("/public/fonts/Wedding Bells - TTF.ttf") format("truetype");
+  src: url("/fonts/Wedding Bells - TTF.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Dosis";
-  src: url("/public/fonts/Dosis-Medium.ttf") format("truetype");
+  src: url("/fonts/Dosis-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "GreatVibes";
-  src: url("/public/fonts/GreatVibes-Regular.ttf") format("truetype");
+  src: url("/fonts/GreatVibes-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Alexis Marie";
-  src: url("/public/fonts/Alexis Marie.ttf") format("truetype");
+  src: url("/fonts/Alexis Marie.ttf") format("truetype");
 }
 
 .v-toolbar__content {
