@@ -44,6 +44,7 @@ export default {
 
 <style scoped>
 header.v-app-bar {
+  width: 100vw !important;
   background-color: #b2ac88;
   color: #000000;
 }
@@ -115,6 +116,9 @@ header.v-app-bar {
 }
 
 .v-toolbar__content {
+  .v-toolbar-title.v-app-bar-title {
+    margin-inline-start: 0;
+  }
   .v-toolbar-title__placeholder {
     font-family: "Andasia", sans-serif;
     font-size: 5rem;
@@ -122,6 +126,27 @@ header.v-app-bar {
     text-align: center;
     overflow: visible;
     height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .v-toolbar__content {
+    .v-toolbar-title__placeholder {
+      font-size: 4rem;
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .v-toolbar__content {
+    .v-toolbar-title__placeholder {
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 490px) {
+  .v-toolbar__content {
+    .v-toolbar-title__placeholder {
+      font-size: 2rem;
+    }
   }
 }
 </style>

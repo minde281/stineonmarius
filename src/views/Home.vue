@@ -115,34 +115,34 @@
       <div class="time-table">
         <p class="header">Program</p>
         <v-row>
-          <v-col class="text-rigth" cols="12" sm="6">
-            <p class="display-1">12:00</p>
+          <v-col class="text-right" cols="6" sm="6">
+            <p class="display-1">6:00</p>
           </v-col>
-          <v-col class="text-left" cols="12" sm="6">
+          <v-col class="text-left" cols="6" sm="6">
             <p class="display-1">Puling i fjæra</p>
           </v-col>
         </v-row>
         <v-row>
-          <v-col class="text-rigth" cols="12" sm="6">
+          <v-col class="text-right" cols="6" sm="6">
             <p class="display-1">14:00</p>
           </v-col>
-          <v-col class="text-left" cols="12" sm="6">
+          <v-col class="text-left" cols="6" sm="6">
             <p class="display-1">Analen i kanalen</p>
           </v-col>
         </v-row>
         <v-row>
-          <v-col class="text-rigth" cols="12" sm="6">
+          <v-col class="text-right" cols="6" sm="6">
             <p class="display-1">16:00</p>
           </v-col>
-          <v-col class="text-left" cols="12" sm="6">
+          <v-col class="text-left" cols="6" sm="6">
             <p class="display-1">Snusken i busken</p>
           </v-col>
         </v-row>
         <v-row>
-          <v-col class="text-rigth" cols="12" sm="6">
+          <v-col class="text-right" cols="6" sm="6">
             <p class="display-1">18:00</p>
           </v-col>
-          <v-col class="text-left" cols="12" sm="6">
+          <v-col class="text-left" cols="6" sm="6">
             <p class="display-1">BK</p>
           </v-col>
         </v-row>
@@ -249,14 +249,15 @@ export default {
 
 .image-text {
   position: absolute;
-  width: 75vh;
+  width: 75vw;
+  max-width: 1440px;
   left: 50%;
   transform: translate(-50%, 0);
   color: @text-box-text-color;
   font-family: @default-font;
   font-weight: 100;
   text-align: center;
-  overflow: visible;
+  overflow: hidden;
   height: auto;
   background-color: @text-box-background-color;
 
@@ -278,6 +279,16 @@ export default {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .image-text {
+    width: 100%;
+    &.bottom,
+    &.top {
+      border-radius: 0;
+    }
+  }
+}
+
 .center-text {
   top: 0%;
   bottom: 0%;
@@ -288,6 +299,7 @@ export default {
   text-align: center;
   overflow: visible;
   height: auto;
+  padding: 15px;
   background-color: @text-box-background-color;
   .rsvp-form {
     width: 400px;
@@ -354,12 +366,10 @@ export default {
   }
 }
 
-.text-rigth {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
+@media screen and (max-width: 800px) {
+  .time-table {
+    font-size: 30px;
+  }
 }
 
 .flex {
