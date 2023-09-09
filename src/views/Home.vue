@@ -191,18 +191,7 @@
 
 <script>
 export default {
-  data: () => ({
-    songRequest: {
-      name: "",
-      textarea: "",
-    },
-    rsvp: {
-      name: "",
-      plussOne: false,
-      namePartner: "",
-      attending: true,
-    },
-  }),
+  data: () => ({}),
   computed: {
     timer() {
       const now = new Date();
@@ -220,6 +209,7 @@ export default {
 @text-box-background-color: #b2ac88;
 @text-box-text-color: #000000;
 @default-font: "Alexis Marie", sans-serif;
+@header-font: "Andasia", sans-serif;
 
 .container {
   display: flex;
@@ -247,6 +237,20 @@ export default {
   }
 }
 
+p {
+  font-size: 25px;
+  font-family: @default-font;
+  font-weight: 100;
+  text-align: center;
+  overflow: visible;
+  height: auto;
+  &.header {
+    font-size: 60px;
+    font-family: @header-font;
+    padding-top: 40px;
+  }
+}
+
 .image-text {
   position: absolute;
   width: 75vw;
@@ -254,11 +258,7 @@ export default {
   left: 50%;
   transform: translate(-50%, 0);
   color: @text-box-text-color;
-  font-family: @default-font;
-  font-weight: 100;
-  text-align: center;
   overflow: hidden;
-  height: auto;
   background-color: @text-box-background-color;
 
   &.bottom {
@@ -294,17 +294,8 @@ export default {
   bottom: 0%;
   left: 50%;
   color: @text-box-text-color;
-  font-family: @default-font;
-  font-weight: 100;
-  text-align: center;
-  overflow: visible;
-  height: auto;
   padding: 15px;
   background-color: @text-box-background-color;
-  .rsvp-form {
-    width: 400px;
-    display: inline-block;
-  }
 }
 
 .top-image {
@@ -334,36 +325,18 @@ export default {
     padding: 0 30px;
     p {
       font-size: 40px;
-      font-family: "Andasia", sans-serif;
-      text-align: center;
-      overflow: visible;
-      height: auto;
+      font-family: @header-font;
     }
   }
 }
 
 .center-text {
   font-size: 25px;
-  p.header {
-    padding-top: 40px;
-    font-size: 60px;
-    font-family: "Andasia", sans-serif;
-    text-align: center;
-    overflow: visible;
-    height: auto;
-  }
 }
 
 .time-table {
   padding-top: 60px;
   font-size: 40px;
-  .header {
-    font-size: 60px;
-    font-family: "Andasia", sans-serif;
-    text-align: center;
-    overflow: visible;
-    height: auto;
-  }
 }
 
 @media screen and (max-width: 800px) {
