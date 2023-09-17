@@ -1,7 +1,7 @@
 <template>
   <div class="full-width background-image top-image">
     <div class="image-text bottom">
-      <p class="date">22. juni 2024</p>
+      <p class="big date">22. juni 2024</p>
       <p class="sub-text">Bli med og feire dagen med oss</p>
     </div>
   </div>
@@ -156,18 +156,22 @@
           <div class="flex">
             <div title="Dager" class="days">
               <p>Dager</p>
+              <span class="mobile-only">D</span>
               {{ days }}
             </div>
             <div title="Timer" class="hours">
               <p>Timer</p>
+              <span class="mobile-only">T</span>
               {{ hours }}
             </div>
             <div title="Minutter" class="minutes">
               <p>Minutter</p>
+              <span class="mobile-only">Min</span>
               {{ minutes }}
             </div>
             <div title="Sekunder" class="seconds">
               <p>Sekunder</p>
+              <span class="mobile-only">Sek</span>
               {{ seconds }}
             </div>
           </div>
@@ -244,6 +248,9 @@ p {
   text-align: center;
   overflow: visible;
   height: auto;
+  &.big {
+    font-size: 50px;
+  }
   &.header {
     font-size: 60px;
     font-family: @header-font;
@@ -265,12 +272,12 @@ p {
     bottom: 0%;
     border-radius: 20px 20px 0 0;
     padding: 40px 80px 20px 80px;
-    p {
-      font-size: 30px;
-      &.date {
-        font-size: 50px;
-      }
-    }
+    // p {
+    //   font-size: 30px;
+    //   &.date {
+    //     font-size: 50px;
+    //   }
+    // }
   }
   &.top {
     top: 0%;
@@ -285,6 +292,7 @@ p {
     &.bottom,
     &.top {
       border-radius: 0;
+      padding: 20px 10px 20px 10px;
     }
   }
 }
@@ -327,21 +335,80 @@ p {
       font-size: 40px;
       font-family: @header-font;
     }
+    .mobile-only {
+      display: none;
+      font-family: @header-font;
+    }
   }
 }
 
-.center-text {
-  font-size: 25px;
+@media screen and (max-width: 1270px) {
+  .timer {
+    padding-top: 10px;
+    div {
+      font-size: 46px;
+      padding: 0 20px;
+      p {
+        font-size: 36px;
+      }
+    }
+  }
 }
 
-.time-table {
-  padding-top: 60px;
-  font-size: 40px;
+@media screen and (max-width: 1070px) {
+  .timer {
+    padding-top: 10px;
+    div {
+      font-size: 40px;
+      padding: 0 20px;
+      p {
+        font-size: 30px;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 800px) {
-  .time-table {
-    font-size: 30px;
+@media screen and (max-width: 975px) {
+  .timer {
+    padding-top: 10px;
+    div {
+      font-size: 36px;
+      padding: 0 10px;
+      p {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .timer {
+    padding-top: 10px;
+    div {
+      font-size: 36px;
+      padding: 0 12px;
+      p {
+        font-size: 26px;
+        display: none;
+      }
+      .mobile-only {
+        margin-top: -10px;
+        font-size: 26px;
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 340px) {
+  .timer {
+    padding-top: 10px;
+    div {
+      font-size: 30px;
+      padding: 0 5px;
+      .mobile-only {
+        display: none;
+      }
+    }
   }
 }
 
