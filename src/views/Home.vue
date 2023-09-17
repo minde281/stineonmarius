@@ -299,11 +299,11 @@ p {
 }
 
 .top-image {
-  background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-006.jpg");
+  background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-006-min.jpg");
 }
 
 .image-stare {
-  background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-001-bw.jpg");
+  background-image: url("https://s3.eu-west-1.amazonaws.com/mariusminde.no/stineogmarius/Tyrkia2013-001-bw-min.jpg");
 }
 
 .spotify {
