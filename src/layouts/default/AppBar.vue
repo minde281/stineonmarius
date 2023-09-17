@@ -121,31 +121,45 @@ header.v-app-bar {
   }
   .v-toolbar-title__placeholder {
     font-family: "Andasia", sans-serif;
-    font-size: 5rem;
+    font-size: 80px;
     font-weight: 100;
     text-align: center;
     overflow: visible;
     height: auto;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .v-toolbar__content {
     .v-toolbar-title__placeholder {
-      font-size: 4rem;
+      font-size: 64px;
     }
   }
 }
 @media screen and (max-width: 620px) {
   .v-toolbar__content {
     .v-toolbar-title__placeholder {
-      font-size: 3rem;
+      font-size: 56px;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .v-toolbar__content {
+    .v-toolbar-title__placeholder {
+      font-size: 48px;
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .v-toolbar__content {
+    .v-toolbar-title__placeholder {
+      font-size: 40px;
     }
   }
 }
 @media screen and (max-width: 490px) {
   .v-toolbar__content {
     .v-toolbar-title__placeholder {
-      font-size: 2rem;
+      font-size: 36px;
     }
   }
 }
