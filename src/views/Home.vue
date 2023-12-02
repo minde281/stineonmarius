@@ -82,15 +82,15 @@
           <p>Tlf Marius: 98401479</p>
         </div>
         <div class="section forlovere">
-          <p class="header">Forlovere TODO</p>
+          <p class="header">Forlovere</p>
           <div class="flex">
             <div class="forlover">
-              <p>Stine</p>
-              <p>Minde</p>
+              <p>Sandra</p>
+              <p>Gundersen</p>
             </div>
             <div class="forlover">
-              <p>Marius</p>
-              <p>Minde</p>
+              <p>Tom Erik</p>
+              <p>Berger</p>
             </div>
           </div>
         </div>
