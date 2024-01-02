@@ -17,13 +17,4 @@ export default {
 @text-box-text-alt-color: #c9b277;
 @default-font: "Alexis Marie", sans-serif;
 @header-font: "Forum", sans-serif;
-
-.header {
-  font-family: @header-font;
-  color: @text-box-text-alt-color;
-  font-size: 3rem;
-  font-weight: 200;
-  margin-bottom: 2rem;
-  text-align: center;
-}
 </style>

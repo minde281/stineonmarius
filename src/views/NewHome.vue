@@ -3,7 +3,7 @@
     <div class="content">
       <div class="center-text">
         <div class="section sermoni">
-          <p class="header">Sermoni</p>
+          <h1 class="header">Sermoni</h1>
           <p>Rotvoll Park</p>
           <p>Arkitekt Ebbells veg 22</p>
           <p>7053 Ranheim</p>
@@ -20,7 +20,7 @@
           </p>
         </div>
         <div class="section">
-          <p class="header">Selskap</p>
+          <h1 class="header">Selskap</h1>
           <p>Scandic Nidelven</p>
           <p>Havnegata 1-3</p>
           <p>7010 Trondheim</p>
@@ -168,14 +168,6 @@ export default {
       padding: 1rem;
       width: 100%;
       max-width: 600px;
-      .header {
-        font-family: @header-font;
-        font-size: 32px;
-        font-weight: 200;
-        margin: 0;
-        color: @text-box-text-alt-color;
-        text-align: center;
-      }
       p {
         font-family: @default-font;
         font-size: 24px;

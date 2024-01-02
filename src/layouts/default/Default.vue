@@ -84,12 +84,28 @@ import DefaultView from "./View.vue";
   src: url("/fonts/Alexis Marie.ttf") format("truetype");
 }
 
+@background-color: #ffffff;
+@text-box-background-color: #b2ac88;
+@text-box-text-color: #000000;
+@text-box-text-alt-color: #c9b277;
+@default-font: "Alexis Marie", sans-serif;
+@header-font: "Forum", sans-serif;
+
 .float-right {
   position: fixed;
   right: 30px;
   top: 40px;
   margin: 1rem;
   font-size: 20px;
+}
+
+.header {
+  font-family: @header-font;
+  color: @text-box-text-alt-color;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 </style>
 

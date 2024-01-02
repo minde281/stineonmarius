@@ -104,14 +104,6 @@ export default {
   .time-table {
     font-family: @default-font;
     margin: 0 auto;
-    .header {
-      font-family: @header-font;
-      color: @text-box-text-alt-color;
-      font-size: 3rem;
-      font-weight: 200;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
     .text-right {
       text-align: right;
     }
