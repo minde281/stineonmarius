@@ -1,5 +1,26 @@
 <template>
-  <h1 class="header">FAQ</h1>
+  <div class="full-width">
+    <div class="faq-holder">
+      <div class="center-text">
+        <div class="faq">
+          <h1 class="header">FAQ</h1>
+          <div class="section forlovere">
+            <h2>Forlovere</h2>
+            <v-row>
+              <v-col class="forlover">
+                <p>Sandra Gundersen</p>
+                <p></p>
+              </v-col>
+              <v-col class="forlover">
+                <p>Tom Erik Berger</p>
+                <p></p>
+              </v-col>
+            </v-row>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
