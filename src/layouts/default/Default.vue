@@ -107,6 +107,12 @@ import DefaultView from "./View.vue";
   margin-bottom: 2rem;
   text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 2rem;
+  }
+}
 </style>
 
 <style lang="less" scoped>
