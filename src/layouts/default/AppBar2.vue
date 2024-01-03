@@ -16,13 +16,14 @@
         </v-btn>
       </div>
       <v-list>
-        <router-link to="/"><v-list-item link>Home</v-list-item></router-link>
-        <v-divider></v-divider>
-        <router-link to="/new-home">
-          <v-list-item link>New home</v-list-item>
+        <router-link to="/">
+          <v-list-item link>Hjem</v-list-item>
         </router-link>
         <router-link to="/program">
           <v-list-item link>Program</v-list-item>
+        </router-link>
+        <router-link to="/forlovere">
+          <v-list-item link>Forlovere</v-list-item>
         </router-link>
         <router-link to="/faq">
           <v-list-item link>FAQ</v-list-item>
