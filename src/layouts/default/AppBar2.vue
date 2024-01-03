@@ -26,7 +26,7 @@
           <v-list-item link>Forlovere</v-list-item>
         </router-link>
         <router-link to="/faq">
-          <v-list-item link>FAQ</v-list-item>
+          <v-list-item link>Spørsmål og svar</v-list-item>
         </router-link>
       </v-list>
     </div>
