@@ -164,8 +164,6 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 1rem;
-      padding: 1rem;
       width: 100%;
       max-width: 600px;
       p {
