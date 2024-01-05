@@ -224,7 +224,6 @@ export default {
       h2 {
         font-family: @header-font;
         color: @text-box-text-alt-color;
-        font-size: 36px;
         font-weight: 200;
       }
     }

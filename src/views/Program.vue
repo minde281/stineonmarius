@@ -270,6 +270,7 @@ body {
   margin: 0 0 0 0;
   font-weight: normal;
   color: #000000;
+  font-size: 24px;
 }
 
 .container .content p {

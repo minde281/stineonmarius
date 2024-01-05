@@ -102,9 +102,9 @@ import DefaultView from "./View.vue";
 .header {
   font-family: @header-font;
   color: @text-box-text-alt-color;
-  font-size: 3rem;
+  font-size: 60px;
   font-weight: 200;
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -119,6 +119,14 @@ p {
   }
 }
 
+h2 {
+  font-family: @header-font;
+  color: @text-box-text-alt-color;
+  font-size: 36px;
+  font-weight: 200;
+  text-align: center;
+}
+
 a {
   color: @text-box-text-alt-color;
 }
@@ -126,6 +134,7 @@ a {
 @media screen and (max-width: 480px) {
   .header {
     font-size: 2rem;
+    margin-bottom: 5px;
   }
   p {
     font-size: 16px;
@@ -230,15 +239,6 @@ a {
   }
 }
 
-@media screen and (max-width: 480px) {
-  p {
-    font-size: 16px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-}
-
 @media (max-width: 400px) {
   .top-img-holder {
     .img-text {
@@ -247,6 +247,7 @@ a {
       }
       h2 {
         font-size: 16px;
+        margin-bottom: 5px;
       }
     }
   }
