@@ -108,9 +108,30 @@ import DefaultView from "./View.vue";
   text-align: center;
 }
 
+p {
+  font-family: @default-font;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+  strong {
+    font-weight: 600;
+  }
+}
+
+a {
+  color: @text-box-text-alt-color;
+}
+
 @media screen and (max-width: 480px) {
   .header {
     font-size: 2rem;
+  }
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
   }
 }
 </style>
@@ -206,6 +227,15 @@ import DefaultView from "./View.vue";
         font-size: 24px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
   }
 }
 
