@@ -24,59 +24,8 @@ import DefaultView from "./View.vue";
 
 <style lang="less">
 @font-face {
-  font-family: "I Love Glitter";
-  src: url("/fonts/I Love Glitter.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Forum";
   src: url("/fonts/Forum-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Monsieur-Regular";
-  src: url("/fonts/MonsieurLaDoulaise-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "The heart of everything";
-  src: url("/fonts/The Heart of Everything - TTF.ttf") format("truetype"),
-    url("/fonts/The Heart of Everything - OTF.otf") format("otf");
-}
-
-@font-face {
-  font-family: "Brotherhood";
-  src: url("/fonts/Brotherhood_Script.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Andasia";
-  src: url("/fonts/Andasia.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "LoversQuarrel";
-  src: url("/fonts/LoversQuarrel-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Mrs Alexandra";
-  src: url("/fonts/Mrs Alexandra.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Wedding Bells";
-  src: url("/fonts/Wedding Bells - TTF.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Dosis";
-  src: url("/fonts/Dosis-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "GreatVibes";
-  src: url("/fonts/GreatVibes-Regular.ttf") format("truetype");
 }
 
 @font-face {
