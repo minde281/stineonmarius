@@ -10,7 +10,7 @@
               <i class="icon fa fa-home"></i>
               <div class="content">
                 <h2>Oppmøte på Rotvoll Park</h2>
-                <p>Her kan det komme mer info</p>
+                <p></p>
               </div>
             </div>
             <div class="container right">
@@ -18,7 +18,7 @@
               <i class="icon fa fa-gift"></i>
               <div class="content">
                 <h2>Sermoni</h2>
-                <p>Her kan det komme mer info</p>
+                <p></p>
               </div>
             </div>
             <div class="container left">
@@ -26,7 +26,7 @@
               <i class="icon fa fa-user"></i>
               <div class="content">
                 <h2>Bobler og kake</h2>
-                <p>Her kan det komme mer info</p>
+                <p></p>
               </div>
             </div>
             <div class="container right">
@@ -138,6 +138,9 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 15px 0;
+  p {
+    font-size: 20px;
+  }
 }
 
 .timeline::after {
@@ -243,30 +246,34 @@ body {
   left: 56px;
 }
 
-.container .content {
+.program-holder .timeline .container .content {
   padding: 30px 90px 30px 30px;
   background: white;
   position: relative;
   border-radius: 0 500px 500px 0;
   text-align: right;
+  p {
+    text-align: right;
+  }
 }
 
-.container.right .content {
+.program-holder .timeline .container.right .content {
   padding: 30px 30px 30px 90px;
   border-radius: 500px 0 0 500px;
   text-align: left;
+  p {
+    text-align: left;
+  }
 }
 
 .container .content h2 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
+  margin: 0 0 0 0;
   font-weight: normal;
   color: #000000;
 }
 
 .container .content p {
   margin: 0;
-  font-size: 16px;
   line-height: 22px;
   color: #000000;
 }
@@ -293,27 +300,36 @@ body {
 
   .container.left::before,
   .container.right::before {
-    left: 100px;
+    left: 90px;
+    width: 25px;
     border-color: transparent #000000 transparent transparent;
   }
 
   .container.left .date,
   .container.right .date {
     right: auto;
-    left: 15px;
+    left: 25px;
   }
 
   .container.left .icon,
   .container.right .icon {
     right: auto;
-    left: 146px;
+    left: 115px;
   }
 
-  .container.left .content,
-  .container.right .content {
-    padding: 30px 30px 30px 90px;
+  .program-holder .timeline .container.left .content,
+  .program-holder .timeline .container.right .content {
+    padding: 30px 30px 30px 50px;
     border-radius: 500px 0 0 500px;
     text-align: left;
+    p {
+      text-align: left;
+      font-size: 14px;
+    }
+    h2 {
+      text-align: left;
+      font-size: 20px;
+    }
   }
 }
 </style>
