@@ -227,14 +227,6 @@ export default {
         font-size: 36px;
         font-weight: 200;
       }
-      p {
-        font-size: 20px;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        strong {
-          font-weight: 600;
-        }
-      }
     }
   }
 }
@@ -245,16 +237,6 @@ export default {
 @media screen and (max-width: 480px) {
   .faq-holder {
     max-width: 90vw;
-    .center-text {
-      .section {
-        h2 {
-          font-size: 24px;
-        }
-        p {
-          font-size: 16px;
-        }
-      }
-    }
   }
 }
 </style>

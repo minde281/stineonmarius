@@ -44,22 +44,25 @@
     <div class="content">
       <div class="center-text">
         <div class="section overnatting">
-          <p class="header">Overnatting TODO</p>
+          <p class="header">Overnatting</p>
           <p>
-            Ønsker dere å overnatte på hotellet kan dere bruke rabattkode
-            "RABATTKODE" ved bestilling.
+            De som ønsker å overnatte på Scandic Nidelven kan få rabattert rom
+            ved å bruke bookingkode <strong>BSTI220624</strong> innen 07. juni
+            2024.
           </p>
-          <p>Da er Norges beste hotellfrokost inkludert.</p>
         </div>
         <div class="section toastmaster">
-          <p class="header">Toastmaster TODO</p>
+          <p class="header">Toastmaster</p>
           <p>Vi har gleden av å presentere vår toastmaster</p>
           <p>{{ toastmaster.name }}</p>
           <br />
           <p>
             Dersom&nbsp;du&nbsp;har&nbsp;noe&nbsp;du&nbsp;ønsker&nbsp;å fortelle
             felleskapet&nbsp;kan&nbsp;du&nbsp;kontakte
-            {{ toastmaster.name }}&nbsp;på tlf:&nbsp;{{ toastmaster.phone }}.
+            {{ toastmaster.name }}&nbsp;på tlf:&nbsp;<a
+              :href="'tel:' + toastmaster.phone"
+              >{{ toastmaster.phone }}</a
+            >.
           </p>
           <p>Vi vil likevel be dere holde taler korte og underholdende</p>
         </div>
@@ -117,8 +120,8 @@
 export default {
   data: () => ({
     toastmaster: {
-      name: "Stine Minde",
-      phone: "81549300",
+      name: "Thomas Isaksen Minde",
+      phone: "94059295",
     },
   }),
   computed: {
@@ -166,15 +169,16 @@ export default {
       align-items: center;
       width: 100%;
       max-width: 600px;
-      p {
-        font-family: @default-font;
-        font-size: 24px;
-        font-weight: 200;
-        margin: 0;
-        text-align: center;
-      }
-      a {
-        color: @text-box-text-alt-color;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    .center-text {
+      .section {
+        margin-bottom: 20px;
       }
     }
   }
